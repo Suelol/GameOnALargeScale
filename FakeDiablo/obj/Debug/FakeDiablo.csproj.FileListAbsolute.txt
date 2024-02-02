@@ -1,0 +1,15 @@
+C:\Users\Админ\source\repos\FakeDiablo\FakeDiablo\bin\Debug\FakeDiablo.exe.config
+C:\Users\Админ\source\repos\FakeDiablo\FakeDiablo\bin\Debug\FakeDiablo.exe
+C:\Users\Админ\source\repos\FakeDiablo\FakeDiablo\bin\Debug\FakeDiablo.pdb
+C:\Users\Админ\source\repos\FakeDiablo\FakeDiablo\obj\Debug\FakeDiablo.csproj.AssemblyReference.cache
+C:\Users\Админ\source\repos\FakeDiablo\FakeDiablo\obj\Debug\MainWindow.g.cs
+C:\Users\Админ\source\repos\FakeDiablo\FakeDiablo\obj\Debug\App.g.cs
+C:\Users\Админ\source\repos\FakeDiablo\FakeDiablo\obj\Debug\FakeDiablo_MarkupCompile.cache
+C:\Users\Админ\source\repos\FakeDiablo\FakeDiablo\obj\Debug\FakeDiablo_MarkupCompile.lref
+C:\Users\Админ\source\repos\FakeDiablo\FakeDiablo\obj\Debug\MainWindow.baml
+C:\Users\Админ\source\repos\FakeDiablo\FakeDiablo\obj\Debug\FakeDiablo.g.resources
+C:\Users\Админ\source\repos\FakeDiablo\FakeDiablo\obj\Debug\FakeDiablo.Properties.Resources.resources
+C:\Users\Админ\source\repos\FakeDiablo\FakeDiablo\obj\Debug\FakeDiablo.csproj.GenerateResource.cache
+C:\Users\Админ\source\repos\FakeDiablo\FakeDiablo\obj\Debug\FakeDiablo.csproj.CoreCompileInputs.cache
+C:\Users\Админ\source\repos\FakeDiablo\FakeDiablo\obj\Debug\FakeDiablo.exe
+C:\Users\Админ\source\repos\FakeDiablo\FakeDiablo\obj\Debug\FakeDiablo.pdb
