@@ -5,49 +5,48 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FakeDiablo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="750" Width="1100" ResizeMode="NoResize">
+        Title="MainWindow" Height="750" Width="1300 " ResizeMode="NoResize">
     <Window.Background>
         <ImageBrush ImageSource="/фон.jpg"/>
     </Window.Background>
     <Grid>
-        <Label Content="Choose a character:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="56" Width="284" Foreground="Red" FontSize="30"/>
-        <ComboBox HorizontalAlignment="Left" Margin="294,16,0,0" VerticalAlignment="Top" Width="234" Height="44"/>
-        <Label Content="Strength" HorizontalAlignment="Left" Margin="44,245,0,0" VerticalAlignment="Top" Height="56" Width="136" Foreground="Red" FontSize="30"/>
-        <Label Content="Dextirity" HorizontalAlignment="Left" Margin="44,327,0,0" VerticalAlignment="Top" Height="56" Width="136" Foreground="Red" FontSize="30"/>
-        <Label Content="Inteligence" HorizontalAlignment="Left" Margin="44,401,0,0" VerticalAlignment="Top" Height="56" Width="160" Foreground="Red" FontSize="30"/>
-        <Label Content="Vitality" HorizontalAlignment="Left" Margin="44,477,0,0" VerticalAlignment="Top" Height="56" Width="108" Foreground="Red" FontSize="30"/>
-        <Label Content="Health:" HorizontalAlignment="Left" Margin="40,165,0,0" VerticalAlignment="Top" Height="56" Width="112" Foreground="Red" FontSize="30"/>
-        <Label Content="Magic:" HorizontalAlignment="Left" Margin="262,165,0,0" VerticalAlignment="Top" Height="56" Width="108" Foreground="Red" FontSize="30"/>
-        <Label Content="100" HorizontalAlignment="Left" Margin="152,165,0,0" VerticalAlignment="Top" Height="56" Width="112" Foreground="Red" FontSize="30"/>
-        <Label Content="100" HorizontalAlignment="Left" Margin="370,165,0,0" VerticalAlignment="Top" Height="56" Width="108" Foreground="Red" FontSize="30"/>
-        <Image Margin="739,126,24,50" Source="/Mag.jpg" Stretch="Fill"/>
-        <Label Content="20" HorizontalAlignment="Left" Margin="185,245,0,0" VerticalAlignment="Top" Height="56" Width="136" Foreground="Red" FontSize="30"/>
-        <Label Content="20" HorizontalAlignment="Left" Margin="185,327,0,0" VerticalAlignment="Top" Height="56" Width="136" Foreground="Red" FontSize="30"/>
-        <Label Content="20" HorizontalAlignment="Left" Margin="225,401,0,0" VerticalAlignment="Top" Height="56" Width="136" Foreground="Red" FontSize="30"/>
-        <Label Content="20" HorizontalAlignment="Left" Margin="157,477,0,0" VerticalAlignment="Top" Height="56" Width="107" Foreground="Red" FontSize="30"/>
-        <Button Content="Add" HorizontalAlignment="Left" Margin="294,250,0,0" VerticalAlignment="Top" Height="44" Width="83" Click="Button_Click" FontSize="25"/>
-        <Button Content="Delete" HorizontalAlignment="Left" Margin="411,251,0,0" VerticalAlignment="Top" Height="44" Width="82" Click="Button_Click" FontSize="25"/>
-        <Button Content="Add" HorizontalAlignment="Left" Margin="294,331,0,0" VerticalAlignment="Top" Height="44" Width="83" Click="Button_Click" FontSize="25"/>
-        <Button Content="Delete" HorizontalAlignment="Left" Margin="411,332,0,0" VerticalAlignment="Top" Height="44" Width="82" Click="Button_Click" FontSize="25"/>
-        <Button Content="Add" HorizontalAlignment="Left" Margin="294,406,0,0" VerticalAlignment="Top" Height="44" Width="83" Click="Button_Click" FontSize="25"/>
-        <Button Content="Delete" HorizontalAlignment="Left" Margin="411,407,0,0" VerticalAlignment="Top" Height="44" Width="82" Click="Button_Click" FontSize="25"/>
-        <Button Content="Add" HorizontalAlignment="Left" Margin="293,481,0,0" VerticalAlignment="Top" Height="44" Width="84" Click="Button_Click" FontSize="25"/>
-        <Button Content="Delete" HorizontalAlignment="Left" Margin="411,481,0,0" VerticalAlignment="Top" Height="44" Width="82" Click="Button_Click" FontSize="25"/>
-        <Button Content="Points" HorizontalAlignment="Left" Margin="587,179,0,0" VerticalAlignment="Top" Height="44" Width="82" Click="Button_Click" FontSize="25"/>
-        <TextBox HorizontalAlignment="Left" Margin="587,245,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="82" Height="46" FontSize="25" TextAlignment="Center"/>
-        <Label Content="Points:" HorizontalAlignment="Left" Margin="587,0,0,0" VerticalAlignment="Center" Height="47" Width="93" Foreground="Red" FontSize="18"/>
-        <Label Content="p.dmg:" HorizontalAlignment="Left" Margin="44,564,0,0" VerticalAlignment="Top" Height="56" Width="108" Foreground="Red" FontSize="30"/>
-        <Label Content="20" HorizontalAlignment="Left" Margin="157,564,0,0" VerticalAlignment="Top" Height="56" Width="107" Foreground="Red" FontSize="30"/>
-        <Label Content="m.dmg:" HorizontalAlignment="Left" Margin="44,625,0,0" VerticalAlignment="Top" Height="56" Width="108" Foreground="Red" FontSize="30"/>
-        <Label Content="20" HorizontalAlignment="Left" Margin="157,625,0,0" VerticalAlignment="Top" Height="56" Width="107" Foreground="Red" FontSize="30"/>
-        <Label Content="armor:" HorizontalAlignment="Left" Margin="273,564,0,0" VerticalAlignment="Top" Height="56" Width="108" Foreground="Red" FontSize="30"/>
-        <Label Content="20" HorizontalAlignment="Left" Margin="371,564,0,0" VerticalAlignment="Top" Height="56" Width="107" Foreground="Red" FontSize="30"/>
-        <Label Content="m.def:" HorizontalAlignment="Left" Margin="273,625,0,0" VerticalAlignment="Top" Height="56" Width="108" Foreground="Red" FontSize="30"/>
-        <Label Content="20" HorizontalAlignment="Left" Margin="371,625,0,0" VerticalAlignment="Top" Height="56" Width="107" Foreground="Red" FontSize="30"/>
-        <Label Content="Crt Chance:" HorizontalAlignment="Left" Margin="452,564,0,0" VerticalAlignment="Top" Height="56" Width="164" Foreground="Red" FontSize="30"/>
-        <Label Content="20" HorizontalAlignment="Left" Margin="621,564,0,0" VerticalAlignment="Top" Height="56" Width="107" Foreground="Red" FontSize="30"/>
-        <Label Content="Crt dmg:" HorizontalAlignment="Left" Margin="452,616,0,0" VerticalAlignment="Top" Height="56" Width="164" Foreground="Red" FontSize="30"/>
-        <Label Content="20" HorizontalAlignment="Left" Margin="587,616,0,0" VerticalAlignment="Top" Height="56" Width="107" Foreground="Red" FontSize="30"/>
-
+        <Label Content="Choose a character:" HorizontalAlignment="Left" Margin="28,32,0,0" VerticalAlignment="Top" Height="56" Width="284" Foreground="White" FontSize="30"/>
+        <ComboBox HorizontalAlignment="Left" Margin="312,41,0,0" VerticalAlignment="Top" Width="234" Height="44"/>
+        <Label Content="Strength:" HorizontalAlignment="Left" Margin="50,126,0,0" VerticalAlignment="Top" Height="56" Width="136" Foreground="White" FontSize="30"/>
+        <Label Content="Dextirity:" HorizontalAlignment="Left" Margin="325,126,0,0" VerticalAlignment="Top" Height="56" Width="136" Foreground="White" FontSize="30"/>
+        <Label Content="Inteligence:" HorizontalAlignment="Left" Margin="54,291,0,0" VerticalAlignment="Top" Height="56" Width="160" Foreground="White" FontSize="30"/>
+        <Label Content="Vitality:" HorizontalAlignment="Left" Margin="324,291,0,0" VerticalAlignment="Top" Height="56" Width="108" Foreground="White" FontSize="30"/>
+        <Label Content="Health:" HorizontalAlignment="Left" Margin="612,198,0,0" VerticalAlignment="Top" Height="56" Width="112" Foreground="White" FontSize="30"/>
+        <Label Content="Magic:" HorizontalAlignment="Left" Margin="616,282,0,0" VerticalAlignment="Top" Height="56" Width="108" Foreground="White" FontSize="30"/>
+        <Label Content="100" HorizontalAlignment="Left" Margin="711,198,0,0" VerticalAlignment="Top" Height="56" Width="112" Foreground="White" FontSize="30"/>
+        <Label Content="100" HorizontalAlignment="Left" Margin="711,282,0,0" VerticalAlignment="Top" Height="56" Width="108" Foreground="White" FontSize="30"/>
+        <Image Margin="868,126,52,50" Source="/Mag.jpg" Stretch="Fill"/>
+        <Label Content="20" HorizontalAlignment="Left" Margin="186,126,0,0" VerticalAlignment="Top" Height="56" Width="50" Foreground="White" FontSize="30"/>
+        <Label Content="20" HorizontalAlignment="Left" Margin="456,126,0,0" VerticalAlignment="Top" Height="56" Width="50" Foreground="White" FontSize="30"/>
+        <Label Content="20" HorizontalAlignment="Left" Margin="219,291,0,0" VerticalAlignment="Top" Height="56" Width="51" Foreground="White" FontSize="30"/>
+        <Label Content="20" HorizontalAlignment="Left" Margin="438,291,0,0" VerticalAlignment="Top" Height="56" Width="50" Foreground="White" FontSize="30"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="54,204,0,0" VerticalAlignment="Top" Height="44" Width="83" Click="Button_Click" FontSize="25" Background="#FF479D56"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="171,205,0,0" VerticalAlignment="Top" Height="44" Width="82" Click="Button_Click" FontSize="25" Background="#FF9D4747"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="329,203,0,0" VerticalAlignment="Top" Height="44" Width="83" Click="Button_Click" FontSize="25" Background="#FF479D56"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="446,204,0,0" VerticalAlignment="Top" Height="44" Width="82" Click="Button_Click" FontSize="25" Background="#FF9D4747"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="58,360,0,0" VerticalAlignment="Top" Height="44" Width="83" Click="Button_Click" FontSize="25" Background="#FF479D56"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="175,361,0,0" VerticalAlignment="Top" Height="44" Width="82" Click="Button_Click" FontSize="25" Background="#FF9D4747"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="328,360,0,0" VerticalAlignment="Top" Height="44" Width="84" Click="Button_Click" FontSize="25" Background="#FF479D56"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="446,360,0,0" VerticalAlignment="Top" Height="44" Width="82" Click="Button_Click" FontSize="25" Background="#FF9D4747"/>
+        <Button Content="Points" HorizontalAlignment="Left" Margin="695,41,0,0" VerticalAlignment="Top" Height="44" Width="82" Click="Button_Click" FontSize="25" Background="#FF467AB7"/>
+        <TextBox HorizontalAlignment="Left" Margin="594,41,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="82" Height="44" FontSize="25" TextAlignment="Center"/>
+        <Label Content="Points:" HorizontalAlignment="Left" Margin="650,107,0,0" VerticalAlignment="Top" Height="47" Width="93" Foreground="White" FontSize="18"/>
+        <Label Content="p.dmg:" HorizontalAlignment="Left" Margin="62,447,0,0" VerticalAlignment="Top" Height="56" Width="108" Foreground="White" FontSize="30"/>
+        <Label Content="20" HorizontalAlignment="Left" Margin="162,447,0,0" VerticalAlignment="Top" Height="56" Width="49" Foreground="White" FontSize="30"/>
+        <Label Content="m.dmg:" HorizontalAlignment="Left" Margin="62,508,0,0" VerticalAlignment="Top" Height="56" Width="108" Foreground="White" FontSize="30"/>
+        <Label Content="20" HorizontalAlignment="Left" Margin="173,508,0,0" VerticalAlignment="Top" Height="56" Width="49" Foreground="White" FontSize="30"/>
+        <Label Content="armor:" HorizontalAlignment="Left" Margin="65,564,0,0" VerticalAlignment="Top" Height="56" Width="108" Foreground="White" FontSize="30"/>
+        <Label Content="20" HorizontalAlignment="Left" Margin="160,564,0,0" VerticalAlignment="Top" Height="56" Width="51" Foreground="White" FontSize="30"/>
+        <Label Content="m.def:" HorizontalAlignment="Left" Margin="286,564,0,0" VerticalAlignment="Top" Height="56" Width="108" Foreground="White" FontSize="30"/>
+        <Label Content="20" HorizontalAlignment="Left" Margin="378,564,0,0" VerticalAlignment="Top" Height="56" Width="48" Foreground="White" FontSize="30"/>
+        <Label Content="crt chance:" HorizontalAlignment="Left" Margin="287,446,0,0" VerticalAlignment="Top" Height="56" Width="164" Foreground="White" FontSize="30"/>
+        <Label Content="20" HorizontalAlignment="Left" Margin="440,447,0,0" VerticalAlignment="Top" Height="56" Width="48" Foreground="White" FontSize="30"/>
+        <Label Content="crt dmg:" HorizontalAlignment="Left" Margin="286,507,0,0" VerticalAlignment="Top" Height="56" Width="164" Foreground="White" FontSize="30"/>
+        <Label Content="20" HorizontalAlignment="Left" Margin="405,507,0,0" VerticalAlignment="Top" Height="56" Width="48" Foreground="White" FontSize="30"/>
     </Grid>
 </Window>
