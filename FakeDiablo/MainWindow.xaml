@@ -1,0 +1,43 @@
+﻿<Window x:Class="WPFCharacters.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFCharacters"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1000" ResizeMode="NoResize">
+    <Window.Background>
+        <ImageBrush ImageSource="/Background.jpg"/>
+    </Window.Background>
+    <Grid>
+        <ComboBox x:Name="class_select" Margin="228,24,613,499" Initialized="ComboBox_Initialized" SelectionChanged="class_select_SelectionChanged" FontSize="20"/>
+        <Label x:Name="classLabel" Content="Chose a character:" HorizontalAlignment="Left" Height="45" Margin="0,24,0,0" VerticalAlignment="Top" Width="242" BorderBrush="Black" FontSize="25" Foreground="White"/>
+        <Image x:Name="wizardImg" HorizontalAlignment="Left" Height="473" Margin="662,66,0,0" VerticalAlignment="Top" Width="330" Source="/props/Wizard.jpg" Initialized="wizardImg_Initialized"/>
+        <Image x:Name="warriorImg" HorizontalAlignment="Left" Height="473" Margin="662,66,0,0" VerticalAlignment="Top" Width="330" Source="/props/Warrior.jpg" Visibility="Hidden"/>
+        <Image x:Name="rogueImg" HorizontalAlignment="Left" Height="473" Margin="662,66,0,0" VerticalAlignment="Top" Width="330" Source="/props/Rogue.jpg" Visibility="Hidden"/>
+        <Label x:Name="curStr" Content="" HorizontalAlignment="Left" Height="48" Margin="30,108,0,0" VerticalAlignment="Top" Width="142" FontSize="25" Initialized="curStr_Initialized" Foreground="White"/>
+        <Label x:Name="curVit" HorizontalAlignment="Left" Height="48" Margin="248,108,0,0" VerticalAlignment="Top" Width="142" FontSize="25" Initialized="curVit_Initialized" Foreground="White"/>
+        <Label x:Name="curDex" HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="160" FontSize="25" Initialized="curDex_Initialized" Margin="23,246,0,0" Foreground="White"/>
+        <Label x:Name="curInt" Content="" HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="182" FontSize="25" Initialized="curInt_Initialized" Margin="228,247,0,0" Foreground="White"/>
+        <Label x:Name="curHp" Content="" HorizontalAlignment="Left" Height="48" Margin="458,206,0,0" VerticalAlignment="Top" Width="154" FontSize="25" Initialized="curHp_Initialized" Foreground="White"/>
+        <Label x:Name="curMp" Content="" HorizontalAlignment="Left" Height="48" Margin="454,259,0,0" VerticalAlignment="Top" Width="155" FontSize="25" Initialized="curMp_Initialized" Foreground="White"/>
+        <Button x:Name="plusStr" Content="Add" HorizontalAlignment="Left" Height="44" Margin="44,161,0,0" VerticalAlignment="Top" Width="50" FontSize="18" Initialized="plusStr_Initialized" Click="plusStr_Click" Background="#FF4ACE59"/>
+        <Button x:Name="plusVit" Content="Add" HorizontalAlignment="Left" Height="44" Margin="262,161,0,0" VerticalAlignment="Top" Width="50" FontSize="18" Initialized="plusVit_Initialized" Click="plusVit_Click" Background="#FF4ACE59"/>
+        <Button x:Name="plusDex" Content="Add" HorizontalAlignment="Left" Height="44" Margin="44,300,0,0" VerticalAlignment="Top" Width="50" FontSize="18" Initialized="plusDex_Initialized" Click="plusDex_Click" Background="#FF4ACE59"/>
+        <Button x:Name="plusInt" Content="Add" HorizontalAlignment="Left" Height="44" Margin="261,300,0,0" VerticalAlignment="Top" Width="51" FontSize="18" Initialized="plusInt_initialized" Click="plusInt_Click" Background="#FF4ACE59"/>
+        <TextBox x:Name="statpoint" HorizontalAlignment="Left" Height="29" Margin="454,32,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="78" FontSize="18" TextAlignment="Center" Initialized="statpoint_Initialized" GotFocus="statpoint_GotFocus"/>
+        <Label x:Name="phys_dmg" HorizontalAlignment="Left" Height="48" Margin="23,397,0,0" VerticalAlignment="Top" Width="155" FontSize="25" Initialized="phys_dmg_Initialized" Foreground="White"/>
+        <Label x:Name="armor" HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="155" FontSize="25" Initialized="armor_Initialized" Margin="23,503,0,0" Foreground="White"/>
+        <Label x:Name="mdmg" Content="" HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="172" FontSize="25" Initialized="mdmg_initialized" Margin="23,450,0,0" Foreground="White"/>
+        <Label x:Name="mdef" HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="155" FontSize="25" Initialized="mdef_initialized" Margin="228,503,0,0" Foreground="White"/>
+        <Label x:Name="crtchance" HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="181" FontSize="25" Initialized="crtch_initialized" Margin="228,397,0,0" Foreground="White"/>
+        <Label x:Name="crtdmg" HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="181" FontSize="25" Initialized="crtdmg_initialized" Margin="228,450,0,0" Foreground="White"/>
+        <Button x:Name="minusStr" Content="Del" HorizontalAlignment="Left" Height="44" Margin="100,161,0,0" VerticalAlignment="Top" Width="52" FontSize="18" Initialized="minusStr_initialized" Click="minusStr_click" Background="#FFE05F5F"/>
+        <Button x:Name="minusVit" Content="Del" HorizontalAlignment="Left" Height="44" Margin="318,161,0,0" VerticalAlignment="Top" Width="52" FontSize="18" Initialized="MinusVit_initialized" Click="minusVit_click" Background="#FFE05F5F"/>
+        <Button x:Name="minusDex" Content="Del" HorizontalAlignment="Left" Height="44" Margin="100,300,0,0" VerticalAlignment="Top" Width="52" FontSize="18" Initialized="minusDex_initialized" Click="MinusDex_click" Background="#FFE05F5F"/>
+        <Button x:Name="minusInt" Content="Del" HorizontalAlignment="Left" Height="44" Margin="318,300,0,0" VerticalAlignment="Top" Width="52" FontSize="18" Initialized="minusInt_initialized" Click="minusInt_click" Background="#FFE05F5F"/>
+        <Label x:Name="points" Content="Points:" HorizontalAlignment="Left" Height="29" Margin="493,61,0,0" VerticalAlignment="Top" Width="119" Initialized="points_Initialized" Foreground="White" FontSize="15"/>
+        <Button x:Name="points_btn" Content="Points&#xD;&#xA;" HorizontalAlignment="Left" Height="30" Margin="550,31,0,0" VerticalAlignment="Top" Width="78" Initialized="points_btn_Initialized" Click="points_btn_Click" FontSize="20" Background="#FF49A2B9"/>
+
+    </Grid>
+</Window>

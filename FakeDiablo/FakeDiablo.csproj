@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <OutputType>WinExe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Background.jpg" />
+    <None Remove="props\Rogue.jpg" />
+    <None Remove="props\Warrior.jpg" />
+    <None Remove="props\Wizard.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Background.jpg" />
+    <Resource Include="props\Wizard.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="props\Rogue.jpg" />
+    <Resource Include="props\Warrior.jpg" />
+  </ItemGroup>
+
+</Project>
